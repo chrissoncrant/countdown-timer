@@ -8,4 +8,6 @@ This project was fun to do. Some of it went over my head, but each time I revisi
 
 I added the prompt to set the countdown timer.
 
+Check it out here: https://chrissoncrant.github.io/countdown-timer/
+
 Cheers!

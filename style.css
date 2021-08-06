@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.bd {
+    border: 1px solid black;
+}
+
+.base-timer {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.base-timer_circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer_path-elapsed {
+    stroke-width: 7px;
+    stroke: gray;
+}
+
+.base-timer_label {
+    position: absolute;
+    top: 0;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.base-timer_path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    stroke: purple; /*currentColor*/
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+}
+
+.base-timer_svg {
+    transform: scaleX(-1);
+}
+
+#base-timer-path-remaining.green {
+    stroke: green;
+}
+
+#base-timer-path-remaining.orange {
+    stroke: orange;
+}
+
+#base-timer-path-remaining.red {
+    stroke: red;
+}
+
+
+
